@@ -27,11 +27,13 @@ Right arrow key: move the snake right
 
 clone this repo to your local machine using
     
- ``` git clone https://github.com/idrisschebak/snake ```
+` git clone https://github.com/idrisschebak/snake `
 
 Navigate to the cloned repository in the terminal window using the cd command.
 
-Run the game with the command python `python snake_game.py`.
+Run the game with the command python:
+
+ `python snake_game.py`.
 
 ### 💡 Reporting Bugs and Contributing
 If you encounter any bugs or would like to suggest new features, please create an issue on the GitHub repository. Contributions are also welcome! If you would like to contribute to Kitsec, please create a pull request on the GitHub repository.
