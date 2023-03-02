@@ -4,7 +4,7 @@ This is a simple implementation of the classic Snake game in Python using the cu
 [![Demo Video](https://raw.githubusercontent.com/idrisschebak/snake/main/assets/demo.gif)](https://raw.githubusercontent.com/idrisschebak/snake/main/assets/demo.gif)
 
 
-### 🃏 How to Play
+### 🐍 How to Play
 The player controls a snake that moves around the game window, eating food and growing longer with each food pellet consumed. The goal is to score as many points as possible without running into the walls or the snake's own body.
 
 The game can be played using the arrow keys: up, down, left, and right. The snake moves in the direction of the last arrow key pressed. If a new arrow key is pressed that is the opposite of the current direction (e.g., left when the snake is moving right), the snake will not change direction until a valid key is pressed.
