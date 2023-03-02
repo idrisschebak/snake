@@ -1,7 +1,7 @@
 # Snake Game
 This is a simple implementation of the classic Snake game in Python using the curses library. The game window has a border, and the snake is represented by a solid block for the head and hollow blocks for the body segments. The game continues indefinitely, with no limit on the score.
 
-[![Demo Video](https://raw.githubusercontent.com/idrisschebak/snake/main/assets/demo.mov)](https://raw.githubusercontent.com/idrisschebak/snake/main/assets/demo.mov)
+[![Demo Video](https://raw.githubusercontent.com/idrisschebak/snake/main/assets/demo.gif)](https://raw.githubusercontent.com/idrisschebak/snake/main/assets/demo.gif)
 
 
 ### 🃏 How to Play
