@@ -1,6 +1,9 @@
 # Snake Game
 This is a simple implementation of the classic Snake game in Python using the curses library. The game window has a border, and the snake is represented by a solid block for the head and hollow blocks for the body segments. The game continues indefinitely, with no limit on the score.
 
+[![Demo Video](https://raw.githubusercontent.com/idrisschebak/snake/main/assets/demo.mov)](https://raw.githubusercontent.com/idrisschebak/snake/main/assets/demo.mov)
+
+
 ### 🃏 How to Play
 The player controls a snake that moves around the game window, eating food and growing longer with each food pellet consumed. The goal is to score as many points as possible without running into the walls or the snake's own body.
 
