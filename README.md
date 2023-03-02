@@ -13,17 +13,7 @@ Each food pellet eaten by the snake increases the player's score by one point. T
 
 If the snake collides with a wall or its own body, the game is over, and the final score is displayed.
 
-### 🕹️ Controls
-
-⬆️ Up arrow key: move the snake up
-
-⬇️ Down arrow key: move the snake down
-
-⬅️ Left arrow key: move the snake left
-
-➡️ Right arrow key: move the snake right
-
-### 💾 Installation
+### 📦 Installation
 
 clone this repo to your local machine using
     
@@ -34,6 +24,16 @@ Navigate to the cloned repository in the terminal window using the cd command.
 Run the game with the command python:
 
  `python snake_game.py`.
+
+### 🕹️ Controls
+
+⬆️ Up arrow key: move the snake up
+
+⬇️ Down arrow key: move the snake down
+
+⬅️ Left arrow key: move the snake left
+
+➡️ Right arrow key: move the snake right
 
 ### 💡 Reporting Bugs and Contributing
 If you encounter any bugs or would like to suggest new features, please create an issue on the GitHub repository. Contributions are also welcome! If you would like to contribute to Kitsec, please create a pull request on the GitHub repository.
