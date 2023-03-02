@@ -27,9 +27,7 @@ Right arrow key: move the snake right
 
 clone this repo to your local machine using
     
-    ```
-    git clone https://github.com/idrisschebak/snake
-    ```
+ ``` git clone https://github.com/idrisschebak/snake ```
 
 Navigate to the cloned repository in the terminal window using the cd command.
 
