@@ -15,13 +15,13 @@ If the snake collides with a wall or its own body, the game is over, and the fin
 
 ### 🕹️ Controls
 
-Up arrow key ⬆️: move the snake up
+⬆️ Up arrow key: move the snake up
 
-Down arrow key ⬇️: move the snake down
+⬇️ Down arrow key: move the snake down
 
-Left arrow key ⬅️: move the snake left
+⬅️ Left arrow key: move the snake left
 
-Right arrow key ➡️: move the snake right
+➡️ Right arrow key: move the snake right
 
 ### 💾 Installation
 
