@@ -29,3 +29,9 @@ Install the curses library if you don't already have it installed. In a terminal
 Navigate to the cloned repository in the terminal window.
 
 Run the game with the command python `snake_game.py`.
+
+### 💡 Reporting Bugs and Contributing
+If you encounter any bugs or would like to suggest new features, please create an issue on the GitHub repository. Contributions are also welcome! If you would like to contribute to Kitsec, please create a pull request on the GitHub repository.
+
+### 🔖 License
+Kitsec is licensed under the MIT License.
