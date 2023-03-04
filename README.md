@@ -9,7 +9,7 @@ The player controls a snake that moves around the game window, eating food and g
 
 Each food pellet eaten by the snake increases the player's score by one point. The snake also gets longer with each pellet consumed. Once the score reaches a certain threshold, the player advances to the next level, and the snake length is reduced by one segment.
 
-If the snake collides with a wall or its own body, the game is over, and the final score is displayed.
+If the snake collides with its own body, the game is over, and the final score is displayed.
 
 ### 📦 Installation
 

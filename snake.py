@@ -27,42 +27,77 @@ level = 1
 snake_length = 3
 level_score = 5
 
-# main game loop
 while True:
     next_direction = game_window.getch()
     if next_direction == curses.KEY_RIGHT and direction != curses.KEY_LEFT:
         direction = next_direction
+        game_window.timeout(100)  # reset the timeout to the default value
     elif next_direction == curses.KEY_LEFT and direction != curses.KEY_RIGHT:
         direction = next_direction
+        game_window.timeout(100)  # reset the timeout to the default value
     elif next_direction == curses.KEY_UP and direction != curses.KEY_DOWN:
         direction = next_direction
+        game_window.timeout(100)  # reset the timeout to the default value
     elif next_direction == curses.KEY_DOWN and direction != curses.KEY_UP:
         direction = next_direction
+        game_window.timeout(100)  # reset the timeout to the default value
+
+        # check if the arrow key is being held down to speed up the snake
+        while True:
+            key = game_window.getch()
+            if key == -1:  # no key is being pressed
+                game_window.timeout(100)  # reset the timeout to the default value
+                break
+            elif key == next_direction:
+                game_window.timeout(50)  # decrease the timeout to make the snake move faster
 
     # move the snake
     new_head = [snake[0][0], snake[0][1]]
     if direction == curses.KEY_RIGHT:
         new_head[1] += 1
+        if new_head[1] == screen_width - 1:
+            new_head[1] = 1
     elif direction == curses.KEY_LEFT:
         new_head[1] -= 1
+        if new_head[1] == 0:
+            new_head[1] = screen_width - 2
     elif direction == curses.KEY_UP:
         new_head[0] -= 1
+        if new_head[0] == 0:
+            new_head[0] = screen_height - 2
     elif direction == curses.KEY_DOWN:
         new_head[0] += 1
+        if new_head[0] == screen_height - 1:
+            new_head[0] = 1
+
+    # check if the snake hit itself
+    if new_head in snake[1:]:
+        tail = snake.pop()
+        game_window.addch(tail[0], tail[1], ' ')
+    
     snake.insert(0, new_head)
 
-    # check if the snake hit the wall or itself
+    # check if the snake hit the wall
     if (
         new_head[0] == 0
         or new_head[0] == screen_height - 1
         or new_head[1] == 0
         or new_head[1] == screen_width - 1
-        or new_head in snake[1:]
     ):
-        curses.endwin()
-        print("Game Over!")
-        print(f"Final Score: {score}")
-        break
+        if new_head[0] == 0:
+            new_head[0] = screen_height - 2
+        elif new_head[0] == screen_height - 1:
+            new_head[0] = 1
+        elif new_head[1] == 0:
+            new_head[1] = screen_width - 2
+        elif new_head[1] == screen_width - 1:
+            new_head[1] = 1
+        snake.insert(0, new_head)
+    else:
+        snake.insert(0, new_head)
+        tail = snake.pop()
+        game_window.addch(tail[0], tail[1], ' ')
+
 
     # check if the snake ate the food
     if new_head == food:
